@@ -1,190 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Dylan Suveges - Full Stack Developer - BC Canada</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="The personal website of Dylan Suveges, a full stack software developer based out of British Columbia."
-    />
-    <meta
-      name="keywords"
-      content="full stack,developer,experienced,web developer,vancouver,dylan,suveges,dylan suveges"
-    />
-    <meta name="author" content="Dylan Suveges" />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <style>
-      html {
-        background: url(bg-lg.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-      body {
-        font-family: 'Century Gothic', sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333333;
-      }
-      .card {
-        background-color: white;
-        max-width: 450px;
-        padding: 40px;
-        text-align: center;
-        margin: 2rem auto;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-          0 10px 10px rgba(0, 0, 0, 0.2);
-      }
-      .card__top-image {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        border: 2px solid #eeeeee;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.2);
-      }
-      .card__name {
-        font-size: 2.5rem;
-        letter-spacing: 4px;
-        font-weight: 100;
-      }
-      .card__profession {
-        font-size: 1.5rem;
-        letter-spacing: 3px;
-        font-weight: 100;
-      }
-      .card__location {
-        font-size: 1.25rem;
-        letter-spacing: 3px;
-        font-weight: 100;
-      }
-      .card__text-content {
-        text-align: justify;
-        margin: 2rem 0;
-        color: #767676;
-        line-height: 1.5rem;
-      }
-      .card__text-content-a {
-        color: #767676;
-        transition: all ease-in-out 250ms;
-      }
-      .card__text-content-a:hover {
-        color: #333333;
-      }
-      .card__top-icon {
-        margin-right: 1rem;
-      }
-      .icon-link-list {
-        margin: 0;
-        padding: 0;
-      }
-      .icon-link-list__li {
-        display: inline-block;
-        margin: 0 10px;
-        list-style: none;
-      }
-      .icon-link-list__a {
-        color: #333333;
-        text-decoration: none;
-        font-size: 3rem;
-        transition: all ease-in-out 250ms;
-      }
-      .icon-link-list__a:hover {
-        color: #767676;
-      }
-      @media screen and (max-width: 1440px) {
-        html {
-          background: url(bg-md.jpg) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-        }
-      }
-      @media screen and (max-width: 1024px) {
-        html {
-          background: url(bg-sm.jpg) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-        }
-      }
-      @media screen and (max-width: 700px) {
-        html {
-          background: none;
-        }
-        .card {
-          box-shadow: none;
-        }
-      }
-      @media screen and (max-width: 500px) {
-        .card__top-image {
-          width: 125px;
-          height: 125px;
-        }
-        .card__name {
-          font-size: 2rem;
-        }
-        .card__profession {
-          font-size: 1.4rem;
-        }
-        .card__location {
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      defer="defer"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="card">
-      <h1 class="card__name">Dylan Suveges</h1>
-      <h2 class="card__profession">
-        <i class="fa fa-briefcase card__top-icon" aria-hidden="true"></i
-        >Full-stack Developer
-      </h2>
-      <h3 class="card__location">
-        <i class="fa fa-map-pin card__top-icon" aria-hidden="true"></i>Vancouver
-        Area, Canada
-      </h3>
-      <p class="card__text-content">
-        I have around 11 years of experience working in full-stack web
-        application development. I’m currently addicted to building things with
-        modern JavaScript, but I've worked with heaps of legacy tech and have
-        the skills to get up to speed on anything quickly. What I love most
-        about this field is being able to continuously improve my technical
-        ability while doing fun things that create value for people. 
-      </p>
-      <p class="card__text-content">
-        Thank you for visiting my personal site even though it's just a
-        placeholder for easy maintenance purposes. I wish you all the best and
-        hope you have a fantastic rest of your day.
-      </p>
-      <p class="card__text-content"></p>
-      <ul class="icon-link-list">
-        <li class="icon-link-list__li">
-          <a class="icon-link-list__a" href="https://www.linkedin.com/in/dsuv/"
-            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li class="icon-link-list__li">
-          <a class="icon-link-list__a" href="https://github.com/dsuv"
-            ><i class="fa fa-github-square" aria-hidden="true"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </body>
+<head>
+<meta charset="UTF-8">
+<title>Big Cat</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  /* Old-school trick to vertically center without flexbox */
+  .wrapper:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90vmin;
+    height: 90vmin;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tail -->
+    <path d="M 120 150 Q 195 140 190 100 Q 188 80 170 85" fill="none" stroke="#e8a856" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="100" cy="150" rx="50" ry="35" fill="#f2b463"/>
+
+    <!-- Head -->
+    <circle cx="100" cy="90" r="45" fill="#f2b463"/>
+
+    <!-- Ears -->
+    <polygon points="65,60 55,20 90,55" fill="#f2b463"/>
+    <polygon points="135,60 145,20 110,55" fill="#f2b463"/>
+    <polygon points="68,55 62,32 84,53" fill="#f7cfa0"/>
+    <polygon points="132,55 138,32 116,53" fill="#f7cfa0"/>
+
+    <!-- Front legs/paws -->
+    <ellipse cx="75" cy="182" rx="12" ry="10" fill="#f2b463"/>
+    <ellipse cx="125" cy="182" rx="12" ry="10" fill="#f2b463"/>
+
+    <!-- Face markings -->
+    <path d="M 100 95 L 100 105" stroke="#d98f3f" stroke-width="2"/>
+
+    <!-- Eyes -->
+    <ellipse cx="82" cy="88" rx="7" ry="9" fill="#2e2e2e"/>
+    <ellipse cx="118" cy="88" rx="7" ry="9" fill="#2e2e2e"/>
+    <circle cx="84" cy="85" r="2" fill="#ffffff"/>
+    <circle cx="120" cy="85" r="2" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <polygon points="100,98 95,105 105,105" fill="#d9698a"/>
+
+    <!-- Mouth -->
+    <path d="M 100 105 Q 100 110 92 112" fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 100 105 Q 100 110 108 112" fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <line x1="60" y1="95" x2="30" y2="90" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="102" x2="30" y2="102" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="109" x2="30" y2="114" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="95" x2="170" y2="90" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="102" x2="170" y2="102" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="109" x2="170" y2="114" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Stripes -->
+    <path d="M 60 70 L 50 60" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 65 65 L 57 53" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 140 70 L 150 60" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135 65 L 143 53" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+</div>
+</body>
 </html>
