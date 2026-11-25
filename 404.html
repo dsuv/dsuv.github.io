@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message">404 - Page not found.</p>
+
+    <script>
+        if (window.location.pathname.endsWith('.mp3')) {
+            document.title = 'Audio Recording';
+            document.getElementById('message').textContent =
+                'The original audio recording has been retained ' +
+                'and is available to authorized parties involved ' +
+                'in the complaint investigation upon request.';
+        }
+    </script>
+</body>
+</html>
