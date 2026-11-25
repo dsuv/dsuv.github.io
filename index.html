@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Big Cat</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  /* Old-school trick to vertically center without flexbox */
+  .wrapper:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90vmin;
+    height: 90vmin;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tail -->
+    <path d="M 120 150 Q 195 140 190 100 Q 188 80 170 85" fill="none" stroke="#e8a856" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="100" cy="150" rx="50" ry="35" fill="#f2b463"/>
+
+    <!-- Head -->
+    <circle cx="100" cy="90" r="45" fill="#f2b463"/>
+
+    <!-- Ears -->
+    <polygon points="65,60 55,20 90,55" fill="#f2b463"/>
+    <polygon points="135,60 145,20 110,55" fill="#f2b463"/>
+    <polygon points="68,55 62,32 84,53" fill="#f7cfa0"/>
+    <polygon points="132,55 138,32 116,53" fill="#f7cfa0"/>
+
+    <!-- Front legs/paws -->
+    <ellipse cx="75" cy="182" rx="12" ry="10" fill="#f2b463"/>
+    <ellipse cx="125" cy="182" rx="12" ry="10" fill="#f2b463"/>
+
+    <!-- Face markings -->
+    <path d="M 100 95 L 100 105" stroke="#d98f3f" stroke-width="2"/>
+
+    <!-- Eyes -->
+    <ellipse cx="82" cy="88" rx="7" ry="9" fill="#2e2e2e"/>
+    <ellipse cx="118" cy="88" rx="7" ry="9" fill="#2e2e2e"/>
+    <circle cx="84" cy="85" r="2" fill="#ffffff"/>
+    <circle cx="120" cy="85" r="2" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <polygon points="100,98 95,105 105,105" fill="#d9698a"/>
+
+    <!-- Mouth -->
+    <path d="M 100 105 Q 100 110 92 112" fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 100 105 Q 100 110 108 112" fill="none" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <line x1="60" y1="95" x2="30" y2="90" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="102" x2="30" y2="102" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="109" x2="30" y2="114" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="95" x2="170" y2="90" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="102" x2="170" y2="102" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="109" x2="170" y2="114" stroke="#2e2e2e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Stripes -->
+    <path d="M 60 70 L 50 60" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 65 65 L 57 53" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 140 70 L 150 60" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135 65 L 143 53" stroke="#d98f3f" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+</div>
+</body>
+</html>
